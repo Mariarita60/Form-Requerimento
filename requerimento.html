@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIA DE REQUERIMENTO</title>
+</head>
+
+<body>
+    <header>
+        <table>
+            <tr>
+            <td>
+                    <img src="c:\Users\NIDNEY\Documents\Faculdade\Logo IFCE.png" alt="" width="140" height="100">
+            </td>
+            <td>
+                    <h1>GUIA DE REQUERIMENTO</h1>
+            </td>
+            </tr>
+        </table>
+        <hr>
+        <p><B>INSTITUTO FEDERAL DO CEARÁ - CAMPUS CEDRO</p></B>
+    </header>
+
+    <main>
+        <form id="guia-requerimento" action="/guia-requerimento" method="post" enctype="multipart/form-data">
+
+            
+            <label for="protocolo">Protocolo N°</label><br>
+            <input type="number"> <br><br>
+            <fieldset>
+                <fieldset>
+                    <label for="requerente">Requerente:</label>
+                    <input type="text" id="requerente" name="requerente:" required> 
+                
+                    <label for="numero-matricula">N° DE MATRICULA:</label>
+                    <input type="number" id="numero-matricula" name="numero-matricula" required>
+                </fieldset>
+                
+                <br>
+
+                <fieldset>
+                    <legend><b>PREENCHA:</b></legend>
+
+                    <label for="data-nascimento">DATA NASCIMENTO:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+                    <label for="naturalidade">NATURALIDADE:</label>
+                    <input type="text" id="naturalidade" name="naturalidade" required>
+                
+                    <label for="filiacao">FILIAÇÃO:</label>
+                    <input type="text" name="filiacao" id="filiacao" required> <br>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <label for="curso">CURSO:</label>
+                    <input type="text" id="curso" name="curso" required>
+
+                    <label for="periodo">PERÍODO:</label>
+                    <input type="number" id="periodo" name="periodo" required>
+
+                    <label for="turno">TURNO:</label>
+                    <input type="text" id="turno" name="turno" required> <br><br>
+
+                    <label for="telefone">TELEFONE:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+                    <label for="email">E-MAIL:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo123@.com.br" rewuired> <br><br>
+                </fieldset>
+            </fieldset>
+
+            <br>
+
+            <div class="assinalar">
+
+
+            </div>
+
+            <style>
+
+            </style>
+            <fieldset>
+                <legend><b>ASSINALE:</b></legend>
+
+                <fieldset">
+
+                    <ol type="1">
+                        <li>
+                            <input type="checkbox" id="via" name="via">
+                            <label for="via">2° Via (especificar) | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="aproveitamento" name="aproveitamento">
+                            <label for="aproveitamento">Aproveitamento de Disciplina (anexar Histórico Escolar e
+                                Programa da Disciplina) | Coordenação do Curso</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="matricula" name="matricula">
+                            <label for="matricula">Matrícula fora do prazo (justificar) | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="cancelamento" name="cancelamento">
+                            <label for="cancelamento">Cancelamento da Matrícula | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="colacao-grau" name="colacao-grau">
+                            <label for="colacao-grau">Colação de Grau/ Colação Especial (justificar) | CCA </label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="declaracao" name="declaracao">
+                            <label for="declaracao">Declaração (especificar) | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="diploma" name="diploma">
+                            <label for="diploma">Diploma (justificar) | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="historico" name="historico">
+                            <label for="historico"> Histórico Escolar | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="reabertura-matricula" name="reabertura-matricula">
+                            <label for="reabertura-matricula">Reabertura Matrícula | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="segunda-chamada" name="segunda-chamada">
+                            <label for="segunda-chamada">Segunda Chamada (anexar justificativa e especificar) |
+                                Coordenação do Curso</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="reingresso" name="reingresso">
+                            <label for="reingresso">Reingresso | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="trancar" name="trancar">
+                            <label for="trancar">Trancamento da Disciplina (especificar) | Coordenação dos
+                                Cursos</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="trancar-doc" name="trancar-doc">
+                            <label for="trancar-doc">Trancamento de Matricula (anexar documentação comprobatória) |
+                                Coordenação Pedagógica</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="transferencia" name="transferencia">
+                            <label for="transferencia">Transferência para outra Instituição | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="validacao-conhecimento" name="validacao-conhecimento">
+                            <label for="validacao-conhecimento">Valldação de Conhecimento (especificar) | Coordenação do
+                                Cursos</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="reajuste" name="reajuste">
+                            <label for="reajuste">Reajuste | CCA</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="recorrecao" name="recorrecao">
+                            <label for="recorrecao">Recorreção de Prova | Coordenação do Cursos</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="auxilio-transporte" name="auxilio-transporte">
+                            <label for="auxilio-transporte">AUXILIO - Transporte | Serviço Social</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="auxilio-moradia" name="auxilio-moradia">
+                            <label for="auxilio-moradia">AUXILIO - Moradia | Serviço Social</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="auxilio-oculos" name="auxilio-oculos">
+                            <label for="auxilio-oculos">AUXILIO - Óculos | Serviço Social</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="auxilio-paisemaes" name="auxilio-paisemaes">
+                            <label for="auxilio-paisemais">AUXILIO - Pais e Mães | Serviço Social</label>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <input type="checkbox" id="outro" name="outro">
+                            <label for="outro">Outros (especificar)</label>
+                        </li>
+            </fieldset>
+
+
+            <p><b>ESPECIFICAR:</b></p>
+            <textarea name="especificar" id="especificar" style="width: 100%; height: 40px;"></textarea>
+
+            <p><b>JUSTIFICAR:</b></p>
+            <textarea name="justificar" id="justificar" style="width: 100%; height: 40px;"></textarea>
+
+            <br><br>
+            
+            <label for="declaracao"><b>DECLARO CONHECER O REGIMENTO DESTA IFE, BEM COMO O PRAZO NECESSÁRIO À TRAMITAÇÃO DO PROCESSO</b></label>
+
+            <br>
+
+            <table width="100%">
+                    <tr>
+                    <td width="45%" align="center">
+                        <br><br>
+                        <textarea name="assinatura" id="assinatura" style="width: 100%; height: 20px;"></textarea>
+                        <p>REQUERENTE (ASS.LEGÍVEL)</p>
+                    </td>
+
+                    <td width="10%"></td>
+
+                    <td width="45%" align="center">
+                        <br><br>
+                        <textarea name="assinatura" id="assinatura" style="width: 100%; height: 20px;"></textarea>
+                        <p>REQUERENTE (ASS.LEGÍVEL)</p>
+                    </td>
+                    </tr>
+
+                
+            </table>
+
+            <br>
+
+            <label for="data-requerimento">CEDRO-CE</label>
+            <input aling="center" type="date" id="data-requerimento" name="data-requerimento"  required>
+
+
+            <br><br>
+            
+            <fieldset>
+                <p>VISTO (COORDENAÇÃO DE ASSUNTOS ESTUDANTIS)</p>
+                <input type="checkbox" id="nao-chave" name="nao-chave">
+                <label for="nao-chave">O requerente NÃO deve chave de armário</label>
+
+                <br>
+                <hr>
+                
+                <input type="checkbox" id="chave" name="chave">
+                <label for="chave">O requerente deve chave do armário</label>
+
+                <br><br>
+                <textarea name="assinatura" id="assinatura" style="width: 100%; height: 20px;" ></textarea>
+                <p width="45%" align="center">Responsável (ass. Legível)</p>
+
+                <hr>
+
+                <p>VISTO (BIBLIOTECA)</p>
+                <input type="checkbox" id="nao-livros" name="nao-livros">
+                <label for="nao-livros">O requerente NÃO deve livros na biblioteca.</label>
+
+                <hr>
+
+                <input type="checkbox" id="livros" name="livros">
+                <label for="livros">O requerente deve livros na biblioteca.</label>
+
+                <br><br>
+                <textarea name="assinatura" id="assinatura" style="width: 100%; height: 20px;" ></textarea>
+                <p width="45%" align="center">Responsável (ass. Legível)</p>
+            </fieldset>
+            
+
+
+
+            </fieldset>
+
+
+
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
